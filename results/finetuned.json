@@ -1,0 +1,13 @@
+{
+  "model_path": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_path": "checkpoints/lora-customer-support-lora",
+  "timestamp": "2026-09-03T10:57:23.922763+00:00",
+  "domain_rouge_l": 43.47,
+  "general_mmlu": {
+    "accuracy_pct": 71.67,
+    "answered": 60,
+    "total": 60
+  },
+  "num_domain_examples": 120,
+  "num_general_examples": 60
+}

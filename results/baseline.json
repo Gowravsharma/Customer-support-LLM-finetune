@@ -1,0 +1,13 @@
+{
+  "model_path": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_path": null,
+  "timestamp": "2026-09-03T06:50:30.685096+00:00",
+  "domain_rouge_l": 23.66,
+  "general_mmlu": {
+    "accuracy_pct": 68.33,
+    "answered": 60,
+    "total": 60
+  },
+  "num_domain_examples": 120,
+  "num_general_examples": 60
+}

@@ -1,0 +1,9 @@
+{
+  "label": "merged",
+  "n_requests": 30,
+  "mean_latency_s": 2.601,
+  "p50_latency_s": 2.65,
+  "p95_latency_s": 2.654,
+  "min_latency_s": 1.989,
+  "max_latency_s": 2.662
+}
