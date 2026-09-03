@@ -1,0 +1,35 @@
+model:
+  name: Qwen/Qwen2.5-7B-Instruct
+  max_seq_len: 1024
+
+data:
+  dataset_id: bitext/Bitext-customer-support-llm-chatbot-training-dataset
+  test_size: 120
+  general_probe_size: 60
+  seed: 42
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+train:
+  epochs: 3
+  learning_rate: 0.0002
+  batch_size: 4
+  grad_accum: 4
+  warmup_ratio: 0.03
+
+paths:
+  data_dir: data
+  output_dir: checkpoints/lora-customer-support
+  merged_dir: checkpoints/merged
+  quantized_dir: checkpoints/quantized
